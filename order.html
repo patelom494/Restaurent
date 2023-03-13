@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Order</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-logo">
+            <img src="image/logo.png" alt="Restaurantlogo">
+        </div>
+        <div class="nav-item">
+            <a href="index.html">Home</a>
+            <a href="ourcook.html">Our Cook</a>
+            <a href="item.html">Items</a>
+            <a href="order.html">Order</a>
+        </div>
+    </nav>
+    <section class="order">
+        <form action="action.php">
+            <label for="item">Choos your food :</label>
+            <select name="item" id="item">
+                <option value="pizza">Pizza</option>
+                <option value="burger">Burger</option>
+                <option value="puff">Puff</option>
+                <option value="vadapav">Vadapav</option>
+                <option value="frenky">Frenky</option>
+            </select><br><br>
+            <label for="delivery">Choos your order:</label><br>
+            <input type="radio" id="delivery" name="delivery" value="hamedelivery"> Home Delivery <br>
+            <input type="radio" id="delivery" name="delivery" value="takeaway"> Take away <br><br>
+            <label for="address">Enter youe address:</label>
+            <textarea name="address" id="address" cols="20"></textarea> <br><br>
+            <label for="mn">Mobile Numbe:</label>
+            <input type="number" id="mn" name="mn" placeholder="Enter your mobile number"><br><br>
+            <input type="submit" value="Order">
+            <input type="reset" value="Reset">
+        </form>
+    </section>
+
+</body>
+
+</html>
